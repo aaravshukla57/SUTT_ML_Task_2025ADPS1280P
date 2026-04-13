@@ -1,6 +1,6 @@
 # Hacker News Intelligence Tool
 
-🎥 **[Demo Video: Watch the tool analyze 'SQLite in production'](LINK_HERE)**
+🎥 **[Demo Video: Watch the tool analyze 'SQLite in production']([LINK_HERE](https://youtu.be/hgAchcrsWPM))**
 
 An AI-powered intelligence dashboard that semantically translates conversational questions, searches Hacker News, and uses local LLMs to extract technical arguments, pros, and cons from massive community discussions.
 
