@@ -1,12 +1,19 @@
 # Hacker News Intelligence Tool
 
+🎥 **[Demo Video: Watch the tool analyze 'SQLite in production'](LINK_HERE)**
+
 An AI-powered intelligence dashboard that semantically translates conversational questions, searches Hacker News, and uses local LLMs to extract technical arguments, pros, and cons from massive community discussions.
+
+## Stages Completed
+- Phase 1: The Digest (Structured pros/cons extraction)
+- Phase 2: Conversational Chat (Interactive Q&A with the fetched Hacker News context)
 
 ## Features
 * Semantic Query Optimization: Converts conversational NLP queries into Algolia-optimized strict keywords while preserving core entities.
 * Multithreaded Data Ingestion: Uses thread pooling to fetch hundreds of deep-nested Hacker News comments concurrently, cutting network latency by 80%.
 * Dynamic Hardware Safeguards: Features a UI-driven context window synchronizer. It automatically packs and truncates RAG contexts to perfectly match your local GPU/RAM limits, completely preventing HTTP 400 Context Overflow errors.
 * Fault-Tolerant JSON Extraction: Implements bracket-snatching and key-mapping fallbacks to survive LLM hallucinations, markdown formatting, and conversational filler.
+* Interactive RAG Chat: Allows users to have a context-aware conversation directly with the fetched Hacker News thread to dive deeper into specific arguments and user opinions.
 * 100% Local Inference: Runs entirely locally via LM Studio, ensuring absolute privacy and zero API costs.
 
 ## Prerequisites
@@ -16,7 +23,7 @@ An AI-powered intelligence dashboard that semantically translates conversational
 ## Getting Started
 1. Start the Local LLM Server: Open LM Studio, load your preferred model, start the Local Inference Server (default: http://localhost:1234/v1). Ensure CORS is enabled.
 2. Install Dependencies: pip install -r requirements.txt
-3. Run the Application: streamlit run app.py or python -m streamlit run app.py
+3. Run the Application: streamlit run app.py
 
 ## Usage Nuances & Hardware Sync
 Local LLMs are bound by physical hardware constraints (VRAM). 
