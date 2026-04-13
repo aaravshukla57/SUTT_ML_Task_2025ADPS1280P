@@ -16,7 +16,7 @@ An AI-powered intelligence dashboard that semantically translates conversational
 ## Getting Started
 1. Start the Local LLM Server: Open LM Studio, load your preferred model, start the Local Inference Server (default: http://localhost:1234/v1). Ensure CORS is enabled.
 2. Install Dependencies: pip install -r requirements.txt
-3. Run the Application: streamlit run app.py
+3. Run the Application: streamlit run app.py or python -m streamlit run app.py
 
 ## Usage Nuances & Hardware Sync
 Local LLMs are bound by physical hardware constraints (VRAM). 
