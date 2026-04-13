@@ -1,0 +1,23 @@
+# Requirements for Streamlit deployment
+# Install with: pip install -r requirements-streamlit.txt
+
+# Core dependencies
+requests>=2.28.0
+urllib3>=1.26.0
+
+# LLM and NLP - Core
+langchain>=0.0.300
+tiktoken>=0.4.0
+
+# LLM Provider Packages (BYOK - Bring Your Own Key)
+# Evaluators can use any provider: OpenAI, Google Gemini, or Groq
+langchain-openai>=0.0.2         # For OpenAI (GPT-4o Mini, $0.15/$0.60 per 1M tokens)
+langchain-google-genai>=0.0.1   # For Google Gemini (Fast, free tier: 60 requests/min)
+langchain-groq>=0.0.1           # For Groq (Fastest, free tier available)
+
+# Streamlit
+streamlit>=1.28.0
+streamlit-chat>=0.0.8
+
+# Utilities
+python-dotenv>=0.21.0           # For loading .env files in local development

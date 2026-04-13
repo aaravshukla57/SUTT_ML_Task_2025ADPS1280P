@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+venv/
+env/
+
+# IDEs and OS
+.vscode/
+.DS_Store
+
+# Project specific debug
+debug_output.json
+test*.py
